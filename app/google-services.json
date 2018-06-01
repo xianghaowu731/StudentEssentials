@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "609820153365",
+    "firebase_url": "https://homeleaver-34036.firebaseio.com",
+    "project_id": "homeleaver-34036",
+    "storage_bucket": "homeleaver-34036.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:609820153365:android:9a58959dc85f5937",
+        "android_client_info": {
+          "package_name": "com.app.studentessentials"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "609820153365-tfi9ka6g6i60qk45oarr8or0ceeh0dli.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.studentessentials",
+            "certificate_hash": "2751a314d641140d21ca0dc004ebf2cf6c244e5f"
+          }
+        },
+        {
+          "client_id": "609820153365-5mj2im1qp4em6etfb6qd0t7lbjfh2haf.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "609820153365-5mj2im1qp4em6etfb6qd0t7lbjfh2haf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBC6gq9J4ZY5ACimJ_nyBs1Fk6JMIk3Zu0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "609820153365-5mj2im1qp4em6etfb6qd0t7lbjfh2haf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

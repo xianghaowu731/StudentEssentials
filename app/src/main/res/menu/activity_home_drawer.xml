@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_todo"
+            android:icon="@drawable/_todo"
+            android:title="To-do list" />
+
+        <item
+            android:id="@+id/nav_budget"
+            android:icon="@drawable/_budget"
+            android:title="Budget management" />
+        <item
+            android:id="@+id/nav_utility"
+            android:icon="@drawable/_utility"
+            android:title="Utility" />
+
+        <item
+            android:id="@+id/nav_planner"
+            android:icon="@drawable/menu_planner"
+            android:title="Planner" />
+        <item
+            android:id="@+id/nav_recipes"
+            android:icon="@drawable/_recipe"
+            android:title="Recipes" />
+
+        <item
+            android:id="@+id/nav_find"
+            android:icon="@drawable/_stress"
+            android:title="Relieve Stress" />
+
+        <item
+            android:id="@+id/nav_reward"
+            android:icon="@drawable/_reward"
+            android:title="Reward cards" />
+
+
+
+        <item
+            android:id="@+id/nav_tips"
+            android:icon="@drawable/_tips"
+            android:title="Tips" />
+
+        <item
+            android:id="@+id/nav_terms"
+            android:icon="@drawable/_todo"
+            android:title="Terms and Conditions" />
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/_contact"
+            android:title="Contact us" />
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/_setting"
+            android:title="Settings" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/_logout"
+            android:title="Logout" />
+
+    </group>
+
+    <!--<item android:title="Communicate">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/nav_share"-->
+                <!--android:icon="@drawable/ic_menu_share"-->
+                <!--android:title="Share" />-->
+            <!--<item-->
+                <!--android:id="@+id/nav_about"-->
+                <!--android:icon="@drawable/ic_menu_send"-->
+                <!--android:title="About us" />-->
+        <!--</menu>-->
+    <!--</item>-->
+
+</menu>
