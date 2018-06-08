@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ln_reward"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:weightSum="6"
+        android:background="@color/colorSky">
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:src="@drawable/back" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:text="Recipe Reviews"
+            android:textSize="22sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp">
+            <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                android:id="@+id/rb_review_rate"
+                style="@style/Widget.MaterialRatingBar.RatingBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                app:mrb_progressBackgroundTint="@color/gray"
+                app:mrb_progressTint="@color/yello"
+                app:mrb_secondaryProgressTint="@color/yello"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:stepSize="0.1"
+                android:rating="4.5" />
+            <Button
+                android:id="@+id/btn_rating_trans"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_avg_rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/theme_color"
+            android:text="Overall rating 4.9/5"
+            android:textSize="16sp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:id="@+id/recycle_reviews"/>
+
+    </LinearLayout>
+</LinearLayout>
+

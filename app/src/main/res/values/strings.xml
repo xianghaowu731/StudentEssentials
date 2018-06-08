@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">Student Essentials</string>
+    //facebook
+    <string name="facebook_app_id">451735755412818</string>
+    <string name="fb_login_protocol_scheme">fb451735755412818</string>
+
+    <string name="title_fingerprint">One-touch Sign In</string>
+    <string name="desc_fingerprint">Please place your fingertip on the scanner to verify your identity</string>
+    <string name="note">(Fingerprint sign in makes you login much faster. You should have at least one fingerprint registered in device settings)</string>
+    <string name="action_settings">Setting</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="previous_meter_reading">Previous Meter Reading</string>
+    <string name="latest_meter_reading">Latest Meter Reading</string>
+    <string name="cost_per_kwh">Cost per kwh</string>
+    <string name="standing_charges_per_day">Standing charges per day</string>
+    <string name="days">Days</string>
+    <string name="vat">VAT</string>
+    <string name="calculate">Calculate</string>
+    <string name="total_kwh">Total Kwh</string>
+    <string name="total_standing_charges">Total Standing Charges</string>
+    <string name="vat_total">VAT Total</string>
+    <string name="total">Total</string>
+
+    <string name="reward_card_scan">Reward Card Scan</string>
+    <string name="code_scan">Code Scan</string>
+    <string name="turn_off_flashlight">FlashLight on</string>
+    <string name="turn_on_flashlight">flashLight off</string>
+    <string name="message">Place a barcode inside the viewfinder rectangle to scan it.</string>
+
+    <string name="search">Search</string>
+    <string name="favorite_recipe">Recipes</string>
+    <string name="filter">Filter</string>
+    <string name="recipe_summary">Lorem lpsum is simply</string>
+    <string name="proteins">Proteins</string>
+    <string name="calories">Calories</string>
+    <string name="fat">Fat</string>
+    <string name="carbs">Carbs</string>
+
+    <string name="recipe_title_name">Recipe Title Name</string>
+    <string name="upload">Upload</string>
+    <string name="recipe_ingredients">Recipe Ingredients</string>
+    <string name="recipe_instruction">Recipe Instruction</string>
+    <string name="recipe_tips">Recipe Tips</string>
+    <string name="save">Save</string>
+    <string name="lorem">Lorem Ipsum Is Simply Dummy Text</string>
+    <string name="spicy">Spicy</string>
+    <string name="description">Compare and contrast essays are characterized by a basis for comparison, points of comparison, and analogies. It is grouped by the object (chunking) or by point (sequential). The comparison highlights the similarities between two or more similar objects while contrasting highlights the differences between two or more objects. When writing a compare/contrast essay, writers need to determine their purpose, consider their audience, consider the basis and points of comparison</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="ingredients_des">Compare and contrast essays are characterized by a basis for comparison, points of comparison, and analogies. It is grouped by the object</string>
+    <string name="tips">Tips</string>
+    <string name="tips_des">Compare and contrast essays are characterized by a basis for comparison, points of comparison, and analogies. It is grouped by the object (chunking) or by point (sequential). The comparison highlights the similarities between two or more similar objects while contrasting highlights the differences between two or more objects. When writing a compare/contrast essay, writers need to determine their purpose, consider their audience, consider the basis</string>
+
+    <string name="add_task">Add Task</string>
+    <string name="task_detail">Task Detail</string>
+    <string name="task_name">Task Name</string>
+    <string name="description_to">Description</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="submit">Submit</string>
+    <string name="reminder">Reminder</string>
+    <string name="cashback">Cashback</string>
+
+    <!--Tips page strings-->
+    <string name="utility">Utitlity</string>
+    <string name="cashback_on_shopping">CashBack on Shopping</string>
+    <string name="broadband">Broadband</string>
+    <string name="student">Student</string>
+    <string name="tip_readmore_btn_text" translatable="false">READ MORE</string>
+    <string name="tips_des_">Utility management this section will allow the user to enter their meter reading for gas, electricity and water (if they have a water meter). The user would be sent a notification either the first day of the month or the end of the month to remind them to take the meter reading. The user would be able to turn off the notification from the settings. The bills will have 3 section one will be a utility bill calculator. The other three or two depending on if the user has a water meter would be gas usage, electricity usage and water usage on the top of each one there would be a graph showing the usage of each month and underneath it would be the daily estimate of usage and used so far. Underneath all of that would be all the monthly readings which would also show amount of usage for the specific month with the readings. The section would have an icon on the top right corner which will provide users with information on how to read utility bills with utility bills examples.</string>
+    <string name="more">More</string>
+
+    <string name="hint_utility">1. These websites can be used to compare mobile, broadband and insurance and more.</string>
+    <string name="hint_broadband">"1. If you’re a student get a 9-month contract deal.\n2. If you want to save money get broadband based on the number of people in the house.\n3. This website can also be used to for bundles like TV and Phone."</string>
+    <string name="hint_cashBack">1. Sign up to store rewards cards to get points when you shop so you can get a voucher to spend at the store or somewhere else.</string>
+    <string name="hint_student">"1. When renting a house try to negotiate with the tenancy provider to get the house for 9-months if possible.
+\n2. Rent a house with all bills included to save you the hassle.
+\n3. Ensure to provide meter readings to the utility provider each month this can help them calculate the cost correctly ensuring you don’t get overcharged.
+\n4. Research student bank accounts before opening one as some can offer free 4-year student railcard and some can offer a better interest-free overdraft.
+\n5. Don’t purchase books as sometimes PDFs can be found online also if you purchase books get them preowned or borrow from the library.If you choose to purchase new ones ensure to sell them afterward either on eBay, Musicmagpie, ziffit, webuybooks whichever provides the most money."
+</string>
+
+    <string name="utility_info_string">\t Your bills should have two readings:\t A current usage reading and a previous reading, both in kilowatts. A utility employee comes out to read your electric meter to figure out how much you\'ve used and that\'s how they know how much to charge you.\n\n  You get charged a set amount per kilowatt of energy used each month on your electric bill, so if your usage has remained around the same from the previous month, your monies due should stay steady also. Read through the taxes and extra charges that are itemized on your bill and compare them to the month before. Call your electric provider if anything unusual has changed.\n\n  Look specifically for charges you can easily avoid—they might be in the itemized charges or mentioned elsewhere on the statement—such as a small monthly fee for paper billing or for paying online.</string>
+    <string name="todolist_todayevent">TODAY <![CDATA[&]]> EVENTS</string>
+</resources>

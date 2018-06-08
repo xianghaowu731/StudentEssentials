@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <resources>
+        <color name="colorPrimary">#3F51B5</color>
+        <color name="colorPrimaryDark">#038ac7</color>
+        <color name="colorAccent">#038ac7</color>
+        <color name="theme_color">#03a9f5</color>
+        <color name="white">#ffffff</color>
+        <color name="black">#000000</color>
+        <color name="divider">#acacac</color>
+        <color name="planner_back">#d9ebf7</color>
+        <color name="yello">#ffa724</color>
+        <color name="transparent_blue">#322100c8</color>
+        <color name="colorSky">#00b0fb</color>
+        <color name="red">#FF0000</color>
+        <color name="green">#008000</color>
+        <color name="blue">#0000FF</color>
+        <color name="colorTransGray">#c1c1c1</color>
+    <color name="setting">#d9ebf7</color>
+    <color name="todolist_back">#bae3fe</color>
+    <color name="gray">#808080</color>
+    <color name="date_outside_month_text_color_activity">#A1F5FF</color>
+    <color name="background_name_of_dayweek_bar">#E6E6CD</color>
+    <color name="text_name_of_dayweek_bar">@android:color/black</color>
+</resources>

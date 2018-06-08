@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lnr_title"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:background="@color/theme_color"
+        android:weightSum="6">
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tint="@color/white"
+            android:layout_gravity="center"
+            android:padding="20dp"
+            android:src="@drawable/back"/>
+        <TextView
+            android:id="@+id/img_title_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:text="Recipe Summary"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:src="@drawable/logo"
+            android:gravity="left|center"
+            android:layout_marginLeft="8dp"
+            />
+
+    </LinearLayout>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+            <ImageView
+                android:id="@+id/img_recipe_photo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/recipe"
+                android:scaleType="fitXY"/>
+            <RelativeLayout
+                android:id="@+id/heart"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="16dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/favorite_bg">
+
+                <ImageView
+                    android:id="@+id/img_recipe_favorite"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_favorite" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="2dp"
+                android:background="#10FFFFFF"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/heart">
+
+                <ImageView
+                    android:id="@+id/add"
+                    android:layout_width="15dp"
+                    android:layout_height="13dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/add"
+                    />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_recipe_title"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentBottom="true"
+                android:background="#61000000"
+                android:text="@string/lorem"
+                android:textSize="17dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:id="@+id/lnr_rating"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:layout_marginTop="8dp">
+                    <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                        android:id="@+id/rb_recipe_rate"
+                        style="@style/Widget.MaterialRatingBar.RatingBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        app:mrb_progressBackgroundTint="@color/gray"
+                        app:mrb_progressTint="@color/yello"
+                        app:mrb_secondaryProgressTint="@color/yello"
+                        android:isIndicator="false"
+                        android:numStars="5"
+                        android:stepSize="0.1"
+                        android:rating="4.4" />
+
+                    <Button
+                        android:id="@+id/rtb_trans"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"/>
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_recipe_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:text="@string/spicy"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="@color/colorSky"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnr_recipe_comment"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight=".4"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/comment" />
+
+                <TextView
+                    android:id="@+id/tv_comment_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="--"
+                    android:textColor="@color/colorSky"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnr_recipe_like"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight=".4"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/like" />
+
+                <TextView
+                    android:id="@+id/tv_like_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="--"
+                    android:textColor="@color/colorSky"
+                    android:textSize="13dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+            <com.uncopt.android.widget.text.justify.JustifiedTextView
+                android:id="@+id/jtv_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/description"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_marginTop="15dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:weightSum="4"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/border">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="24dp"
+                        android:gravity="center"
+                        android:text="@string/calories"
+                        android:textColor="@color/colorSky"
+                        android:textSize="12dp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorSky"/>
+
+                    <TextView
+                        android:id="@+id/tv_recipe_calory"
+                        android:layout_width="match_parent"
+                        android:layout_height="24dp"
+                        android:gravity="center"
+                        android:text="--"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="24dp"
+                        android:gravity="center"
+                        android:text="@string/proteins"
+                        android:textColor="@color/colorSky"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorSky"/>
+
+                    <TextView
+                        android:id="@+id/tv_recipe_protein"
+                        android:layout_width="match_parent"
+                        android:layout_height="24dp"
+                        android:gravity="center"
+                        android:text="--"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="24dp"
+                        android:gravity="center"
+                        android:text="@string/fat"
+                        android:textColor="@color/colorSky"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorSky"/>
+                    <TextView
+                        android:id="@+id/tv_recipe_fat"
+                        android:layout_width="match_parent"
+                        android:layout_height="24dp"
+                        android:gravity="center"
+                        android:text="--"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="24dp"
+                        android:gravity="center"
+                        android:text="@string/carbs"
+                        android:textColor="@color/colorSky"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorSky"/>
+
+                    <TextView
+                        android:id="@+id/tv_recipe_carb"
+                        android:layout_width="match_parent"
+                        android:layout_height="24dp"
+                        android:gravity="center"
+                        android:text="--"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="@string/ingredients"
+                android:textColor="@color/colorSky"
+                android:textSize="16sp"
+                android:layout_marginTop="16dp"/>
+            <com.uncopt.android.widget.text.justify.JustifiedTextView
+                android:id="@+id/jtv_ingredient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ingredients_des"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginTop="4dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="Instruction"
+                android:textColor="@color/colorSky"
+                android:textSize="16sp"
+                android:layout_marginTop="16dp"/>
+            <com.uncopt.android.widget.text.justify.JustifiedTextView
+                android:id="@+id/jtv_instruction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ingredients_des"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginTop="4dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="@string/tips"
+                android:textColor="@color/colorSky"
+                android:textSize="16sp"
+                android:layout_marginTop="16dp"/>
+            <com.uncopt.android.widget.text.justify.JustifiedTextView
+                android:id="@+id/jtv_tip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tips_des"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="36dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
+</LinearLayout>

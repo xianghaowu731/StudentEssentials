@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="260dp"
+    android:layout_height="wrap_content"
+    android:padding="4dp"
+    android:background="@drawable/custom_dlg_bg">
+    <EditText
+        android:id="@+id/edt_custom_name"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:hint="Name"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:backgroundTint="@color/theme_color"
+        android:padding="8dp"
+        android:textSize="14sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"/>
+
+    <EditText
+        android:id="@+id/edt_custom_date"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:hint="Date (dd/mm/yyyy)"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:backgroundTint="@color/theme_color"
+        android:padding="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"/>
+
+    <EditText
+        android:id="@+id/edt_custom_location"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:hint="location"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:backgroundTint="@color/theme_color"
+        android:padding="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"/>
+
+    <EditText
+        android:id="@+id/edt_custom_amount"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:hint="Amount"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:backgroundTint="@color/theme_color"
+        android:padding="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="160dp"
+            android:layout_height="30dp"
+            android:background="@drawable/edt_bg"
+            android:textColor="@color/theme_color"
+            android:text="Add"
+            android:textSize="14sp"
+            android:textAllCaps="false"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"/>
+    </LinearLayout>
+</LinearLayout>
